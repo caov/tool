@@ -18,7 +18,7 @@ import java.util.Set;
  * @author: cf
  * @create: 2019-05-13 16:19
  */
-public class chengYuSpider {
+public class ChengYuSpider {
     private static final String beginUrl = "http://www.zd9999.com/cy/";
 
     public static void main(String[] args)throws Exception {

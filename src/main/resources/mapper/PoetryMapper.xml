@@ -3,6 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cf.tool.dao.PoetryDao">
 
+
     <select id="getPoetryByParam" resultType="com.cf.tool.domain.dto.PoetryDTO">
         select content as poetryContent,title as poetryTitle from poetries where title LIKE concat(concat('%',#{param}),'%')
         or content LIKE concat(concat('%',#{param}),'%')
