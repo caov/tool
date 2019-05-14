@@ -1,6 +1,29 @@
-# 项目介绍  
- 汉字、成语、词语、歇后语、对联 数据爬取爬虫，ip的地区查询API、地区邮编查询API、唐诗宋词API、汉字、成语、词语、歇后语、对联API  
-## 项目目录  
+## 项目介绍  
+ #### 功能:
+ 汉字、成语、词语、歇后语、对联 数据爬取爬虫，ip的地区查询API、地区邮编查询API、唐诗宋词API、汉字、成语、词语、歇后语、对联API 
+ #### 思路:
+ * 汉字、成语、词语、歇后语、对联，数据是通过网上爬取然后插入数据库
+ * ip的地区查询是借助百度开发平台的接口
+ * 地区邮编查询、唐诗宋词通过查询数据库
+ #### 使用:
+  整个项目，直接pull下来，直接运行。浏览器访问查看接口：http://localhost:8000/swagger-ui.html
+***
+## 项目架构
+```
+└── 基础
+    └── Java
+└── 框架
+    └── Springboot
+    └── Mybatis
+    └── Jsoup 一款Java 的HTML解析器，本项目用于数据爬取
+└── 数据库
+    └── mysql
+└── 其他
+    └── lombok 通过简单注解来精简代码达到消除冗长代码，本项目用于实体类
+    └── Swagger 是一个规范和完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务
+```
+***
+## 项目主要目录  
 #### src/main/java/com/cf/tool/spider：
 * [CiYuSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/CiYuSpider.java)：词语数据爬取  
 * [DuiLianSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/DuiLianSpider.java)  : 对联数据爬取  
@@ -18,21 +41,6 @@
 * [XieHouYuController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/XieHouYuController.java)：歇后语相关接口  
 * [ZiController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/ZiController.java)：汉字相关接口  
 
-***
-## 项目架构
-```
-└── 基础
-    └── Java
-└── 框架
-    └── Springboot
-    └── Mybatis
-    └── Jsoup 一款Java 的HTML解析器，本项目用于数据爬取
-└── 数据库
-    └── mysql
-└── 其他
-    └── lombok 通过简单注解来精简代码达到消除冗长代码，本项目用于实体类
-    └── Swagger 是一个规范和完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务
-```
 ***
 **本仓库无任何商业目的！如果有侵权行为将及时删除！**
     
