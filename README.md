@@ -1,8 +1,8 @@
 ## 1、项目介绍  
  #### 功能:
- 汉字、成语、词语、歇后语、对联 数据爬取，ip的地区查询API、地区邮编查询API、唐诗宋词API、汉字、成语、词语、歇后语、对联API 
+ 汉字、成语、词语、歇后语 数据爬取，ip的地区查询API、地区邮编查询API、唐诗宋词API、汉字、成语、词语、歇后语API 
  #### 思路:
- * 汉字、成语、词语、歇后语、对联，数据是通过网上爬取插入数据库，接口通过查询数据库
+ * 汉字、成语、词语、歇后语，数据是通过网上爬取插入数据库，接口通过查询数据库
  * ip的地区查询接口是借助百度开发平台的接口
  * 地区邮编查询、唐诗宋词接口通过查询数据库
  #### 使用:
@@ -25,16 +25,14 @@
 ***
 ## 3、项目主要目录  
 #### src/main/java/com/cf/tool/spider：
-* [CiYuSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/CiYuSpider.java)：词语数据爬取  
-* [DuiLianSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/DuiLianSpider.java)  : 对联数据爬取  
+* [CiYuSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/CiYuSpider.java)：词语数据爬取   
 * [XieHouYuSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/XieHouYuSpider.java)：歇后语数据爬取  
 * [ZiSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/ZiSpider.java)：汉字数据爬取  
 * [ChengYuSpider.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/spider/ChengYuSpider.java)：成语数据爬取  
 
  #### src/main/java/com/cf/tool/controller： 
 * [ChengYuController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/ChengYuController.java)：成语相关接口  
-* [CiYuController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/CiYuController.java): 词语相关接口  
-* [DuiLianController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/DuiLianController.java)：对联相关接口  
+* [CiYuController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/CiYuController.java): 词语相关接口   
 * [IpAddressController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/IpAddressController.java)：查询ip的地区接口  
 * [PoetryController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/PoetryController.java)：唐诗相关接口  
 * [RegionPostcodeController.java](https://github.com/caov/tool/blob/master/src/main/java/com/cf/tool/controller/RegionPostcodeController.java)：地区邮编相关接口   
@@ -45,6 +43,9 @@
 * [chengyu.sql](https://github.com/caov/tool/tree/master/sql)：成语sql文件 
 * [xiehouyu.sql](https://github.com/caov/tool/tree/master/sql)：歇后语sql文件 
 * [zi.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
+* [ci.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
+* [poetries.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
+* [zip_code.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
 ***
 ## 4、接口查询: 
 1、/api/chengyu/getChengYuMessageByWord 接口查询成语 "安然无恙"  
