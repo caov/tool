@@ -48,8 +48,8 @@
 * [zip_code.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
 ***
 ## 4、接口查询: 
-1、/api/chengyu/getChengYuMessageByWord 接口查询成语 "安然无恙"  
-接口返回：
+1、**成语查询**： http://localhost:8000/api/chengyu/getChengYuMessageByWord 接口查询成语 "安然无恙"  
+>接口返回：
 ```
  {
         "word": "安然无恙",
@@ -59,23 +59,21 @@
         "example": "只求处士每岁元旦，作一朱幡，上图日月五星之文，立于苑东，吾辈则安然无恙矣。★明·冯梦龙《醒世恒言》第四卷"
       }
  ```
-2、/api/ipAddress/getAddressByIp 接口查询ip "14.215.177.38"  
-接口返回： 
+2、**词语查询** http://localhost:8000/api/ciyu/getCiYuMessageByWord 接口查询词语 "嘿哈"
+>接口返回： 
  ```
-{
-  "data": "广东省佛山市",
-}
+
  ```
-3、/api/xiehouyu/getXieHouYuByRiddle 接口查询 "狗咬吕洞宾"  
-接口返回：
+3、**歇后语查询** http://localhost:8000/api/xiehouyu/getXieHouYuByRiddle 接口查询 "狗咬吕洞宾"  
+>接口返回：
  ```
  {
    "riddle": "狗咬吕洞宾",
    "answer": "不识好人心"
  }
  ```
- 4、/api/zi/getZiMessage 接口查询 "国"  
-接口返回：
+ 4、**汉字查询** http://localhost:8000/api/zi/getZiMessage 接口查询 "国"  
+>接口返回：
   ```
 {
     "word": "国",
@@ -85,6 +83,32 @@
     "radicals": "囗"
   }
 ```
+5、**唐诗查询** http://localhost:8000/api/poetry/getPoetryByParam 接口查询诗名"沁园春"
+>接口返回：
+```
+{
+        "poetryAuthor": "吕岩",
+        "poetryContent": "七返还丹，在我先须，炼已待时。正一阳初动，中宵漏永，温温铅鼎，光透帘帏。造化争驰，虎龙交媾，进火功夫牛斗危。曲江上，看月华莹净，有个乌飞。当时，自饮刀圭，又谁信无中就养儿。辨水源清浊，木金间隔。不因师指，此事难知。道要玄微，天机深远，下手忙修犹太迟。蓬莱路，待三千行满，独步云归。火宅牵缠，夜去明来，早晚担忧。奈今日茫然，不知明日，波波劫劫，有甚来由？人世风灯，草头珠露，我见伤心眼泪流。不坚久，似石中迸火，水上浮沤。休休，及早回头，把往日风流一笔钩。但粗衣淡饭，随缘度日，任人笑我，我又何求？限到头来，不论贫富，著甚干忙日夜忧。劝年少，把家缘弃了，海上来游。诗曲文章，任汝空留，数千万篇。奈日推一日，月推一月，今年不了，又待来年。有限光阴，无涯火院，只恐蹉跎老却贤。贪痴汉，望成家学道，两事双全。凡间，只恋尘缘，又谁信壶中别有天。这道本无情，不亲富贵，不疏贫贱，只要心坚。不在劳神，不须苦行，息虑忘机合自然。长生事，待明公放下，方可相传。",
+        "poetryTitle": "沁园春"
+      }
+```
+6、**IP地区查询** http://localhost:8000/api/ipAddress/getAddressByIp 接口查询ip "14.215.177.38" 
+```
+{
+  "data": "广东省佛山市",
+}
+```
+7、**地区邮编查询** http://localhost:8000/api/regionPostcode/getRegionPostcode 接口查询地区"江西省上饶市鄱阳县"  
+```
+{
+      "code": "333100",
+      "province": "江西省",
+      "city": "上饶市",
+      "district": "鄱阳县",
+      "area": "茶山"
+    }
+```
+
 ***
 **本仓库无任何商业目的！如果有侵权行为将及时删除！**
     
