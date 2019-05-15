@@ -6,7 +6,7 @@
  * ip的地区查询接口是借助百度开发平台的接口
  * 地区邮编查询、唐诗宋词接口通过查询数据库
  #### 使用:
-  整个项目，直接pull下来，直接运行。浏览器访问查看接口：http://localhost:8000/swagger-ui.html
+  整个项目，直接pull下来，运行ToolApplication.java。浏览器访问查看接口：http://localhost:8000/swagger-ui.html
 ***
 ## 2、项目架构
 ```
