@@ -47,7 +47,7 @@
 * [zi.sql](https://github.com/caov/tool/tree/master/sql)：汉字sql文件 
 ***
 ## 4、接口查询: 
-1、/api/chengyu/getChengYuMessageByWord 接口查询成语 "安然无恙"
+1、/api/chengyu/getChengYuMessageByWord 接口查询成语 "安然无恙"  
 接口返回：
 ```
  {
@@ -58,14 +58,14 @@
         "example": "只求处士每岁元旦，作一朱幡，上图日月五星之文，立于苑东，吾辈则安然无恙矣。★明·冯梦龙《醒世恒言》第四卷"
       }
  ```
-2、/api/ipAddress/getAddressByIp 接口查询ip "14.215.177.38"
+2、/api/ipAddress/getAddressByIp 接口查询ip "14.215.177.38"  
 接口返回： 
  ```
 {
   "data": "广东省佛山市",
 }
  ```
-3、/api/xiehouyu/getXieHouYuByRiddle 接口查询 "狗咬吕洞宾"
+3、/api/xiehouyu/getXieHouYuByRiddle 接口查询 "狗咬吕洞宾"  
 接口返回：
  ```
  {
@@ -73,7 +73,7 @@
    "answer": "不识好人心"
  }
  ```
- 4、/api/zi/getZiMessage 接口查询 "国"
+ 4、/api/zi/getZiMessage 接口查询 "国"  
 接口返回：
   ```
 {
