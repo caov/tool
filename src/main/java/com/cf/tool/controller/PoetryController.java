@@ -26,14 +26,14 @@ import java.util.List;
  * @create: 2019-05-09 10:02
  */
 @RestController
-@Api(value = "PoetryController", description = "唐诗宋词API")
+@Api(value = "PoetryController", description = "唐诗API")
 @RequestMapping("/api/poetry")
 public class PoetryController extends BaseController{
 
     @Autowired
     private PoetryService poetryService;
 
-    @ApiOperation(value = "根据诗词标题或作者或内容查询诗词", response = PoetryDTO.class)
+    @ApiOperation(value = "根据诗词标题或作者或内容查询唐诗", response = PoetryDTO.class)
     @PostMapping("getPoetryByParam")
     public ApiResult<PageResult<PoetryDTO>> getPoetryByParam(@RequestBody @Valid PoetryParam param){ //@Valid 用来验证参数是否符合要求，比如是否为空
         log.info("getPoetryByParam param:{}", JsonUtils.toJSON(param));
