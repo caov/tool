@@ -59,10 +59,13 @@
   "example": "只求处士每岁元旦，作一朱幡，上图日月五星之文，立于苑东，吾辈则安然无恙矣。★明·冯梦龙《醒世恒言》第四卷"
 }
  ```
-2、**词语查询** http://localhost:8000/api/ciyu/getCiYuMessageByWord 接口查询词语 "嘿哈"
+2、**词语查询** http://localhost:8000/api/ciyu/getCiYuMessageByWord 接口查询词语 "即是"
 >接口返回： 
  ```
-
+{
+  "word": "即是",
+  "explanation": "1.如此。 2.就是。"
+}
  ```
 3、**歇后语查询** http://localhost:8000/api/xiehouyu/getXieHouYuByRiddle 接口查询 "狗咬吕洞宾"  
 >接口返回：
