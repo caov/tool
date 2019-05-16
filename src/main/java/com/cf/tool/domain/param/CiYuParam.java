@@ -17,6 +17,6 @@ import javax.validation.constraints.NotNull;
 public class CiYuParam extends PageParam{
 
     @NotNull
-    @ApiModelProperty(value="词语",example = "嘿哈",required = true)
+    @ApiModelProperty(value="词语",example = "即是",required = true)
     private String word;
 }
