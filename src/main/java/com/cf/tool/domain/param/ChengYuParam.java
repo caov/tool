@@ -16,6 +16,6 @@ import javax.validation.constraints.NotNull;
 @ApiModel
 public class ChengYuParam extends PageParam{
     @NotNull
-    @ApiModelProperty(value="汉字",example = "安然无恙",required = true)
+    @ApiModelProperty(value="成语",example = "安然无恙",required = true)
     private String word;
 }

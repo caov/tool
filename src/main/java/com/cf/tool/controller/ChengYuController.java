@@ -30,7 +30,7 @@ import java.util.List;
  * @create: 2019-05-09 14:36
  */
 @RestController
-@Api(value = "ZiController", description = "成语API")
+@Api(value = "ChengYuController", description = "成语API")
 @RequestMapping("/api/chengyu")
 public class ChengYuController extends BaseController{
 
